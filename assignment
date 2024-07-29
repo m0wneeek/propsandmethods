@@ -151,5 +151,10 @@ class Book(Product):
         else:
             return 4
             
+my_book = Book("Children of Time", "A really good sci-fi book about spiders and space", 20, 300, "1447273303", False)
+my_book1 = Book("Children of Memory", "A great sequel", 25, 400, "1529087198", True)
 
+print("Shipping Cost for this book is:", my_book.calculate_shipping(), "pounds")
+
+print("Shipping Cost for this book is:", my_book1.calculate_shipping(), "pounds")
     
